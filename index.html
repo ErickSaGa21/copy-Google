@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clon google</title><!-- We give it the title: "google clone" --> 
+  </head>
+<body>
+  <!-- We place a "header" that has the Google page where the links open the log in so that your browser is updated --> 
+    <header class="header">
+      <!--We place the log in links in the <nav> tag and with color, margin and padding attributes, we make the button blue -->
+        <nav class="nave"> 
+            <a id="gmail" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">Gmail</a>
+            <a id="imagenes" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">Imágenes</a>
+            <img class="menu" src="menu2.png" alt="menú">
+            <a  class="botom" href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=es-419&passive=true&ifkv=AVQVeywsFwAAELxvmcFkm00GYDk9--RGlc-XdmoQkHBQ85j_Xgry0X3S-enoZZM9Q5B_1B9IEhuI&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Iniciar Sesión</a>
+        </nav>
+    </header> 
+    <!-- finally with flexbox place the <header> along with the <nav> on the upper right side of the page adding relative values -->
+    <!-- inside the <main> is the photo, the search bar and the search buttons and I'm going to be lucky --> 
+    <main>
+        <div class="centro">
+            <img id="google" src="BpcL.gif" alt="google"> <!-- We place a gif so that the image is not static --> 
+        </div>
+        <div class="barra"><!-- The search bar has a <form> where we placed the Google search link so that <input type text> would work as an authentic search engine --> 
+              <img id="icon" src="lupa.png" alt="search">
+              <form action="https://www.google.com/search" method="GET">
+                   <input type="text" id="search-input" name="q" >
+              </form>
+              <img id="icon1" src="lens.png" alt="lens">
+        </div><!-- With the help of flexbox we place the icons inside the bar with relative values ​​to give it an identical design-->
+           
+              <section class="lastmenu"> <!-- We place the entry buttons that are visible in the center of the page-->
+                <input type="submit" id="search" value="Buscar con Google">
+                <input id="lucky" type="submit"  value="Voy a tener suerte">
+              </section>
+    </main>
+    <section class="sec"><!--We place the phrase along with the link for the location-->
+           <p>Ofrecido por Google en:<a href="https://www.google.com/setprefs?sig=0_wauLjpSpQu25Gt4xAb7VK0gtntg%3D&amp;hl=es-419&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjF8rrn68uCAxW2lu4BHWbFCm4Q2ZgBCBE">Español (Latinoamérica)</a>
+           </p>
+    </section>
+<!--the footer is divided into 2-->
+  <footer class="footer-link">
+          <div class="foot1">
+                   <p>México</p>
+          </div>
+          <div class="foot2"><!--Within the last part of the footer, the 4 and 3 links of the Google information are divided into 2 parts-->
+                <div class="finallinks">
+                      <a id="final" href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
+                      <a id="final" href="https://ads.google.com/intl/es-419_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+                      <a id="final" href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/">Negocios</a>
+                      <a id="final" href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/">Como funciona la Búsqueda</a>
+                </div>
+                <div class="finallinks2">
+                      <a id="final" href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a>
+                      <a id="final" href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a>
+                      <a id="final" href="">Preferencias</a>
+                </div>
+          </div>
+  </footer><!--The footer is closed, with the help of flex box and the "space between" attribute we manage to separate the links with the ideal space-->
+</body>
+</html>
+<!--With the help of flexbox and relative measurements, we managed to give a design that is as similar to the main Google page as possible. Thanks senseis!--> 
